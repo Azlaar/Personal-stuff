@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Automation IA | Freelance Make & n8n</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="nav">
+        <div class="logo">Automations IA</div>
+        <a class="cta" href="#contact">Planifier un appel</a>
+      </nav>
+      <div class="hero-content">
+        <div>
+          <p class="tag">Make • n8n • IA • CRM</p>
+          <h1>Je conçois des automatisations qui libèrent votre temps.</h1>
+          <p class="subtitle">
+            Freelance spécialisé en Make/n8n et IA. J'automatise la prospection, la gestion des leads,
+            le support client et les tâches répétitives pour les indépendants et PME.
+          </p>
+          <div class="hero-actions">
+            <a class="primary" href="#offres">Voir les offres</a>
+            <a class="ghost" href="#demo">Tester une démo</a>
+            <a class="ghost" href="#promouvoir">Idées de promotion</a>
+          </div>
+          <div class="trust">
+            <div>
+              <span>⚡️</span>
+              <strong>30+ heures gagnées/mois</strong>
+            </div>
+            <div>
+              <span>🔗</span>
+              <strong>Connexion à vos outils existants</strong>
+            </div>
+            <div>
+              <span>🤖</span>
+              <strong>IA intégrée pour mieux décider</strong>
+            </div>
+          </div>
+        </div>
+        <div class="hero-card">
+          <h3>Exemples d'automations rapides</h3>
+          <ul>
+            <li>Lead entrant → qualification IA → CRM + alerte Slack</li>
+            <li>Devis signé → création du projet + checklist</li>
+            <li>Support client → réponse IA + base de connaissance</li>
+          </ul>
+          <p class="note">Déploiement en 7 jours, sans casser vos process.</p>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="offres" class="section">
+        <div class="section-title">
+          <h2>Comment je vous aide</h2>
+          <p>Audit rapide, prototypage et automatisations robustes.</p>
+        </div>
+        <div class="cards">
+          <article class="card">
+            <h3>Diagnostic 360°</h3>
+            <p>Cartographie des tâches répétitives, estimation du ROI et priorités.</p>
+          </article>
+          <article class="card">
+            <h3>Automatisation clé en main</h3>
+            <p>Workflows Make/n8n, IA, validations humaines et documentation claire.</p>
+          </article>
+          <article class="card">
+            <h3>Optimisation continue</h3>
+            <p>Monitoring, améliorations, tests A/B et formation d'équipe.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="promouvoir" class="section">
+        <div class="section-title">
+          <h2>Idées pour promouvoir votre activité</h2>
+          <p>Des actions concrètes pour remplir votre pipeline dès maintenant.</p>
+        </div>
+        <div class="cards">
+          <article class="card">
+            <h3>Mini-audits gratuits</h3>
+            <p>Proposez un audit de 20 min avec 3 automatisations rapides et un ROI estimé.</p>
+          </article>
+          <article class="card">
+            <h3>Démo en 5 minutes</h3>
+            <p>Montrez un workflow en direct (lead → qualification → CRM) pour créer un effet “wow”.</p>
+          </article>
+          <article class="card">
+            <h3>Études de cas ultra courtes</h3>
+            <p>Avant/Après en 5 lignes, chiffrées, publiées sur LinkedIn et dans vos emails.</p>
+          </article>
+          <article class="card">
+            <h3>Partenariats d'agences</h3>
+            <p>Devenez l'expert automation en marque blanche pour agences marketing ou dev.</p>
+          </article>
+          <article class="card">
+            <h3>Newsletter “Automations du mois”</h3>
+            <p>1 automatisation = 1 email. Invite à booker un appel pour la reproduire.</p>
+          </article>
+          <article class="card">
+            <h3>Offre pilote</h3>
+            <p>Pack “Starter” avec un process automatisé clé pour générer vos premières références.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="demo" class="section demo">
+        <div class="section-title">
+          <h2>Démo interactive</h2>
+          <p>Décrivez votre activité et obtenez une mini-proposition d'automations.</p>
+        </div>
+        <div class="demo-grid">
+          <form id="demo-form" class="demo-form">
+            <label>
+              Secteur
+              <select name="secteur" required>
+                <option value="">Choisissez...</option>
+                <option>Agence marketing</option>
+                <option>E-commerce</option>
+                <option>Cabinet de conseil</option>
+                <option>Immobilier</option>
+                <option>Formations en ligne</option>
+              </select>
+            </label>
+            <label>
+              Volume de leads / mois
+              <input type="number" name="leads" min="5" max="2000" placeholder="Ex: 150" required />
+            </label>
+            <label>
+              Objectif principal
+              <select name="objectif" required>
+                <option value="">Choisissez...</option>
+                <option>Gagner du temps</option>
+                <option>Améliorer la conversion</option>
+                <option>Réduire les erreurs</option>
+                <option>Améliorer le support client</option>
+              </select>
+            </label>
+            <label>
+              Outils actuels
+              <input type="text" name="outils" placeholder="Ex: HubSpot, Notion, Slack" />
+            </label>
+            <button type="submit">Générer une mini-proposition</button>
+          </form>
+          <div class="demo-output" id="demo-output">
+            <h3>Votre proposition personnalisée</h3>
+            <p>Remplissez le formulaire pour générer des idées adaptées.</p>
+            <ul id="demo-list"></ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact">
+        <div>
+          <h2>Prêt à automatiser ?</h2>
+          <p>
+            Dites-moi vos défis, je vous réponds avec un plan clair sous 48h.
+          </p>
+        </div>
+        <div class="contact-card">
+          <p><strong>Email :</strong> hello@automation-ia.fr</p>
+          <p><strong>Calendrier :</strong> calendly.com/automation-ia</p>
+          <p><strong>Localisation :</strong> Remote • France & Europe</p>
+          <a class="primary" href="mailto:hello@automation-ia.fr">Demander un audit</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2024 Automations IA. Tous droits réservés.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
